@@ -1,0 +1,24 @@
+<table>
+  <thead>
+  <tr>
+    <td>Book Id</td>
+    <td>Book Title</td>
+    <td>Book Author</td>
+    <td>Book Year</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td *ngFor="let filterContent of filter">
+      <input [formControl]="filterContent.control" type="text"
+      [placeholder]="filterContent.text">
+    </td>
+  </tr>
+  <tr *ngFor="let book of filterResult;let i=index">
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.year}}</td>
+  </tr>
+  </tbody>
+</table>

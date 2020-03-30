@@ -1,0 +1,14 @@
+.mat-sort-header-container {
+  align-items: center;
+}
+#mat-sort-header{
+  text-align: center;
+}
+
+table td {
+  border: 1px solid black;
+}
+td{
+  text-align: center;
+}
+
