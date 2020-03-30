@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <h6>Angular operation</h6>
+      <form>
+        <div class="form-group">
+          <label>ID</label>
+          <input type="text"
+                 id="id"
+                 name="id"
+                 [(ngModel)]="id"
+                 required
+                 #idInput
+                 class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text"
+                 id="name"
+                 name="name"
+                 [(ngModel)]="name"
+                 required
+                 #nameInput
+                 class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Salary</label>
+          <input type="text"
+                 id="salary"
+                 name="salary"
+                 [(ngModel)]="salary"
+                 required
+                 #salaryInput
+                 class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <input type="text"
+                 id="dept"
+                 name="dept"
+                 [(ngModel)]="dept"
+                 required
+                 #deptInput
+                 class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit" (click)="onSubmit()">Add Employee</button>
+      </form>
+    </div>
+  </div>
+</div>
+

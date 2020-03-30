@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <h6>Show all Employees</h6>
+      <table style="width: 100%">
+        <tr>
+          <td>Id</td>
+          <td>NAME</td>
+          <td>SALARY</td>
+          <td>DEPARTMENT</td>
+          <td>ACTION</td>
+        </tr>
+        <tr *ngFor="let emp of Employee;let i=index">
+          <td>{{emp.id}}</td>
+          <td>{{emp.name}}</td>
+          <td>{{emp.salary}}</td>
+          <td>{{emp.department}}</td>
+          <td><button  class="btn-outline-primary"(click)="onUpdate(i)">Update</button>
+            <button class="btn-outline-primary" (click)="onDelete(i)">Delete</button>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <div #container></div>
+    </div>
+  </div>
+</div>
+
+

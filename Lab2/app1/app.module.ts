@@ -2,14 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ShowEmployeeComponent } from './show-employee/show-employee.component';
+import { UpdateEmployeeComponent } from './show-employee/update-employee/update-employee.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddEmployeeComponent,
+    ShowEmployeeComponent,
+    UpdateEmployeeComponent
   ],
     imports: [
         BrowserModule,
+        FormsModule,
         ReactiveFormsModule
     ],
   providers: [],
